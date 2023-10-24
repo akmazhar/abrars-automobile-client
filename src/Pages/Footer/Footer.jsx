@@ -10,8 +10,8 @@ const Footer = () => {
     <footer className="footer p-10 bg-black text-base-content">
     <img className="ml-30" src="/llogo.png" alt=""></img>
   <nav className='flex'>
-    <header className="ml-28 footer-title font-bold text-yellow-100 mr-5 text-xl"></header> 
-    <ul className='text-white text-base'>
+    <header className="m-5 footer-title font-bold text-yellow-100  text-xl"></header> 
+    <ul className='text-white  text-base'>
       
       <li><a className="link link-hover">* Branding</a></li>
       <li><a className="link link-hover">* Design</a> </li>

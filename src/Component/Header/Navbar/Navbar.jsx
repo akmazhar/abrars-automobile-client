@@ -62,18 +62,6 @@ const Navbar = () => {
             </li>
           </ul>
 
-
-
-          <li>
-            {
-              user?.email ? <p>{user?.email}</p> : <p>{''}</p>
-            }
-          </li> 
-
-
-
-
-       
           <li className="list-none">
               {user ? (
               <div className="md:flex items-center gap-2 text-right">
@@ -88,6 +76,11 @@ const Navbar = () => {
               </button>
               )}
               </li>
+              {/* <div>
+               {
+              user?.email ? <p>{user?.email}</p> : <p>{''}</p>
+               }
+               </div> */}
             {/* <li>
               <NavLink
                 to="/register"

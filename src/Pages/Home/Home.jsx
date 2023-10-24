@@ -73,6 +73,7 @@ const Home = () => {
     </div> 
     
     <Mar></Mar>
+   
     <FrontBrand></FrontBrand>
    </div>
    
