@@ -45,8 +45,9 @@ const AddProduct = () => {
         <div className="bg-[#F4F3F0] p-24">
               
              <div className="flex justify-center items-center text-center mb-5">
-             <h1 className='text-3xl text-center font-extrabold font-mono p-3 ml-40 text-blue-600'>Pick Your Car<span className='text-orange-950 font-semibold font-serif'> : Quiet, Rapid, Classic Elegance.</span></h1>
-             <img className="justify-center items-center" src="/car.png" alt="" width={200}/>
+             {/* <h1 className='text-3xl text-center font-extrabold font-mono p-3 ml-40 text-blue-600'>Pick Your Car<span className='text-orange-950 font-semibold font-serif'> : Quiet, Rapid, Classic Elegance.</span></h1> */}
+             {/* <img className="justify-center items-center" src="/car.png" alt="" width={200}/> */}
+             <img className="justify-center items-center" src="https://i.ibb.co/9brLRQk/2.jpg" alt="" width={200}/>
              </div>
 
         <form onSubmit={handleAddProduct}>
