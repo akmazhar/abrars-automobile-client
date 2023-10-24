@@ -65,7 +65,7 @@ return (
         <div className="hero-content lg:flex-cols-reverse">
         <div className="w-96 h-96">
       <img src="https://i.ibb.co/gwJzscB/login.jpg" alt="" />
-      <button className="btn btn-primary">Login</button>
+      <button className="btn"><img className="w- h-32" src="https://i.ibb.co/q78mzCW/Screenshot-2023-10-24-121543.png" alt="" /></button>
        
     
       </div>
@@ -76,13 +76,13 @@ return (
   <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
     
 
-    <form onSubmit={handleLogin} className="card-body bg-cyan-300 rounded-full"> 
+    <form onSubmit={handleLogin} className="card-body bg-cyan-400 rounded-full"> 
 
 
 
       <div className="form-control">
         <label className="label">
-          <span className="label-text ml-20 font-semibold text-yellow-800 px-5 font-mono">Email</span>
+          <span className="label-text ml-20 text-xl font-bold text-yellow-800 px-5 font-mono">Email</span>
         </label>
         <input
           type="email"
@@ -94,7 +94,7 @@ return (
   </div>
   <div className="form-control">
     <label className="label">
-      <span className="label-text ml-10 font-semibold text-yellow-800  font-mono">Password</span>
+      <span className="label-text ml-3 text-xl font-bold text-yellow-800  font-mono">Password</span>
     </label>
     <input
       type="password"
@@ -106,7 +106,7 @@ return (
     <label className="label">
 
 
-      <a onClick={handleForgetPassword} href="#" className="label-text-alt text-red-600 link link-hover">
+      <a onClick={handleForgetPassword} href="#" className="label-text-alt text-red-700 font-serif text-sm link link-hover">
       
 
 
@@ -117,25 +117,16 @@ return (
   <div className="form-control mt-6">
     <button className="btn btn-primary">Login</button>
     <p className="font-serif text-start ml-20">
-      Don't have an account?
+    <i>  Don't have an account?
       
       <Link className="font-serif" to="/register">
-        <button className="btn btn-link text-green-800 font-bold">Register</button>
+        <button className="btn btn-link text-green-700 font-bold">Register</button>
       </Link>
 
-      first.
+      first.</i>
     </p>
 
-
-
-
-
-                <p className="   font-mono py-5 font-semibold text-orange-800 text-center items-center" >Or Login With</p>
-
-
-
-
-                <p>
+<p className="   font-mono py-5 font-semibold text-orange-800 text-center items-center" >Or Login With</p> <p>
         <button onClick={handleGoogleSignIn}
           className="btn bg-black rounded-s-3xl rounded-e-3xl px-28 ml-24 py-2  text-orange-300"
         >

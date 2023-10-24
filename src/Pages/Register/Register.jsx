@@ -7,6 +7,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { updateProfile } from 'firebase/auth';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
+import { FcGoogle } from 'react-icons/fc';
 
 
 
@@ -93,7 +94,7 @@ setSuccess('');
             })
             .then(()=> {
                 window.location.reload();
-                // toast.success('User Created Successfully');
+                toast.success('User Created Successfully');
             })
             .catch(error => {
                 console.log(error)
@@ -123,7 +124,7 @@ setSuccess('');
     return (
         <div className="hero min-h-screen bg-base-200">
           <div className="hero-content flex-col">
-            <div>
+            <div className=''>
             <img src="https://i.ibb.co/0nWDcKC/regi.png" alt="" />
             </div>
             {/* <div className="text-left lg:text-left">
@@ -137,7 +138,7 @@ setSuccess('');
 
               <div className="form-control">
                     <label className="label">
-                      <span className="label-text font-mono">Your Name</span>
+                      <span className="label-text ml-3 text-base  text-blue-600  font-serif">Your Name</span>
                     </label>
                     <input
                       type="text"
@@ -149,7 +150,7 @@ setSuccess('');
                   </div>
     
                   <label className="label">
-                    <span className="label-text font-mono">Photo URL</span>
+                    <span className="label-text ml-3 text-base  text-blue-600  font-serif">Photo URL</span>
                   </label>
                   <input
                     type="url"
@@ -159,7 +160,7 @@ setSuccess('');
                   />
     
                   <label className="label">
-                    <span className="label-text font-mono">Email</span>
+                    <span className="label-text ml-3 text-base  text-blue-600  font-serif">Email</span>
                   </label>
                   <input
                     type="email"
@@ -171,7 +172,7 @@ setSuccess('');
     
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text font-mono">Password</span>
+                      <span className="label-text ml-3 text-base  text-blue-600  font-serif">Password</span>
                     </label>
                     <input
                       type="password"
@@ -226,28 +227,24 @@ setSuccess('');
               </form>
               {registerError && <p className="text-red-700">{registerError}</p>}
               {success && <p className="text-green-700">{success}</p>} 
-              <p className="font-mono text-center">
-                Already have an account?
 
-                 <Link className="font-serif" to="/login">
-                  <button className="btn btn-link text-blue-700 font-bold">Login</button>
-                </Link> 
+              <p className="font-serif text-start ml-5">
+    <i>  Already have an account? So
+      
+      <Link className="font-serif" to="/login">
+        <button className="btn btn-link text-green-700 font-bold">Login</button>
+      </Link>
 
-                <Link className="font-serif" to="/login">
-                  <button className="btn btn-link text-blue-700 font-bold">Login</button>
-                </Link>
-              </p>
+    first.</i>
+    </p>
 
-
-               <p>
-                <button
-                  onClick={handleGoogleSignIn}
-                  className="btn font-serif font-semibold text-orange-800 text-sm text-center"
-                >
-                  Or Login With Google
-                </button>
-              </p>
-
+    <p className="   font-mono py-5 font-semibold  text-orange-800 text-center items-center" >Or Login With</p> <p>
+        <button onClick={handleGoogleSignIn}
+          className="btn bg-black rounded-s-3xl mb-5 rounded-e-3xl px-32 ml-5 mr-5 py-2  text-orange-300"
+        >
+          <FcGoogle className='w-8 h-6'></FcGoogle>
+        </button>
+      </p>
 
 
         
