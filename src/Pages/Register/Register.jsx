@@ -122,28 +122,32 @@ setSuccess('');
 
 
     return (
-        <div className="hero min-h-screen bg-base-200">
-          <div className="hero-content flex-col">
-           
-           
-            {/* <div className="text-left lg:text-left">
-              <h1 className="text-5xl text-green-600 font-mono font-semibold">Register Now!</h1>
-            </div> */}
-            <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
+      <div>
+      <div className='grid  md:grid-cols-2 items-start'>
+  
+    <div>
+    <div className="hero man-w-screen  rounded-e-3xl">
+      <div className="hero-content flex-col">
+        
+        
+        {/* <div className="text-left lg:text-left">
+          <h1 className="text-5xl text-green-600 font-mono font-semibold">Register Now!</h1>
+        </div> */}
+        <div className="card flex-shrink-0 w-full max-w-lg shadow-3xl ml-96 mr-52 bg-base-200  shadow-red-600 rounded-e-3xl rounded-s-md">
 
+        <img className='mt-10 mb-5 mr-20  ml-24 w-64' src="https://i.ibb.co/m9BTq7Q/l.png" alt="" />
+          <form onSubmit={handleRegister} className="card-body">
+      
 
-              <form onSubmit={handleRegister} className="card-body">
-          
-
-              <div className="form-control">
-                    <label className="label">
-                      <span className="label-text ml-3 text-base  text-blue-600  font-serif">Your Name</span>
-                    </label>
-                    <input
+          <div className="form-control">
+                <label className="label">
+                  <span className="label-text ml-3 text-base  text-blue-600  font-serif">Your Name</span>
+                </label>
+                <input
                       type="text"
                       placeholder="User Name"
                       name="name"
-                      className="input input-bordered"
+                      className="input input-bordered w-full"
                       required
                     />
                   </div>
@@ -171,7 +175,7 @@ setSuccess('');
     
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text ml-3 text-base  text-blue-600  font-serif">Password</span>
+                      <span className="label-text ml-3 text-base  text-blue-600 font-serif">Password</span>
                     </label>
                     <input
                       type="password"
@@ -184,7 +188,7 @@ setSuccess('');
     
     
     
-    <span className="absolute top-4 right-48" onClick={() => setShaowPassword(!showPassword)}>
+    <span className="relative  -right-60" onClick={() => setShaowPassword(!showPassword)}>
               {
                 showPassword ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>
               }
@@ -227,7 +231,7 @@ setSuccess('');
               {registerError && <p className="text-red-700">{registerError}</p>}
               {success && <p className="text-green-700">{success}</p>} 
 
-              <p className="font-serif text-start ml-5">
+              <p className="font-serif text-start ml-24">
     <i>  Already have an account? So
       
       <Link className="font-serif" to="/login">
@@ -239,7 +243,7 @@ setSuccess('');
 
     <p className="   font-mono py-5 font-semibold  text-orange-800 text-center items-center" >Or Login With</p> <p>
         <button onClick={handleGoogleSignIn}
-          className="btn bg-black rounded-s-3xl mb-5 rounded-e-3xl px-32 ml-5 mr-5 py-2  text-orange-300"
+          className="btn bg-black rounded-s-3xl mb-5 rounded-e-3xl px-32 ml-32 mr-5 py-2 text-orange-300"
         >
           <FcGoogle className='w-8 h-6'></FcGoogle>
         </button>
@@ -252,6 +256,9 @@ setSuccess('');
           </div>
            {/* <ToastContainer/>  */}
         </div>
+        </div>
+       </div>
+      </div>
   
     );
 };
