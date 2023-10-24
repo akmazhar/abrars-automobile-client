@@ -17,7 +17,7 @@ const Navbar = () => {
       <nav className="flex flex-wrap justify-between items-center py-2 shadow-md grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <Logo />
      
-        <div className="w-full md:w-auto ml-80 mr-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="w-full md:w-auto ml-80 mr-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <ul className="flex flex-wrap gap-5 mr-5 font-mono text-xl font-semibold">
             <li>
               <NavLink
@@ -64,15 +64,15 @@ const Navbar = () => {
 
           <li className="list-none">
               {user ? (
-              <div className="md:flex items-center gap-2 text-right">
+              <div className="md:flex gap-2 text-right">
 
-              <button onClick={logOut} className="btn bg-black w- h-12">
-              <Link to={"/login"}><img className="bg-black w- h-12"  src="https://i.ibb.co/PcJrTF1/loOUT.png" alt="" /></Link>
+              <button onClick={logOut} className=" bg-black  h-15">
+              <Link to={"/login"}><img className="bg-black  h-15"  src="https://i.ibb.co/PcJrTF1/loOUT.png" alt="" /></Link>
               </button>
               </div>
               ) : (
-              <button className="btn bg-black w- h-12">
-              <Link to={"/login"}><img className="bg-black w- h-12" src="https://i.ibb.co/Bj482K6/log.png" alt="" /></Link>
+              <button className="btn bg-black  h-15">
+              <Link to={"/login"}><img className="bg-black  h-15" src="https://i.ibb.co/Bj482K6/log.png" alt="" /></Link>
               </button>
               )}
               </li>
