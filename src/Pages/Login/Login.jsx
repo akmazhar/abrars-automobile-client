@@ -60,19 +60,19 @@ const Login = () => {
 
 return (
     <div>
-      <div>
-      <div className="text-start lg:text-left">
-    <h1 className="text-5xl text-indigo-600 font-mono font-bold">Login!</h1>
-  </div>
-      </div>
+     
       <div className="hero min-h-screen">
         <div className="hero-content lg:flex-cols-reverse">
-        <div>
-    <video autoPlay muted loop className="video ml-10 w-2/3">
-        <source src="/y.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+        <div className="w-96 h-96">
+      <img src="https://i.ibb.co/gwJzscB/login.jpg" alt="" />
+      <button className="btn btn-primary">Login</button>
+       
+    
       </div>
+
+  {/* <div className="text-start lg:text-left">
+    <h1 className="text-5xl text-indigo-600 font-mono font-bold">Login!</h1>
+  </div> */}
   <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
     
 
