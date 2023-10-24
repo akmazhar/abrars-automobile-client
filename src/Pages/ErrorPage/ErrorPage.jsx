@@ -9,14 +9,17 @@ const ErrorPage = () => {
         <div className="py-10 shadow-lg my-56">
            
             <div>
-            <h1 className="text-5xl font-bold text-center text-red-600"> 404 </h1>
-            <h2 className="text-3xl font-bold text-center text-slate-500"> Opps! This page could not be found. </h2>
-            <p className="text-center py-5 font-semibold text-black-700"> The link may be broken, or the page may have<br></br> been removed.
-    Check to see if the link <br></br>you are trying to open is correct.
-</p>
+            <div className="items-center justify-center">
+      <video autoPlay muted loop className="video w-1/2 h-1/2 mb-10 ml-96 ">
+      <source src="/oops!.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+      </div>
+      
             </div>
-            <Link className="flex justify-center" to={'/'}>
-                <button className="px-7 py-4 bg-green-700 hover:bg-green-800 text-center text-white text-xl">Go Home Please</button>
+            <Link className="flex justify-center w-25 border-red-600 h-25" to={'/'}>
+                <button className="btn w-25 h-25 "><img src="https://i.ibb.co/tqWpFH2/po.png" alt="" /></button>
+                {/* <button className="btn  mr-92 shadow-green-600 bg-red-600 text-white font-mono text-lg border-blue-600 border-spacing-56 px-16"><img src="https://i.ibb.co/GFX7GPg/Screenshot-2023-10-24-205943.png" alt="" /></button> */}
             </Link>
         </div>
         

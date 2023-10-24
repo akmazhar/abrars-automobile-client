@@ -64,7 +64,7 @@ const CarCard = ({car, cars, setCars }) => {
   <button className="btn bg-green-800 mr-92 shadow-amber-600 text-white font-mono border-red-600 border-spacing-5">Details</button>
 </Link>
 
-<button onClick={() => handleDelete(_id)} className="btn bg-tomato rounded-xl">X</button>
+
 
 </div>
  </div>   

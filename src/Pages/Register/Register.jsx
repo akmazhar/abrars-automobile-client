@@ -2,7 +2,7 @@
 
 import { useContext, useState, useRef } from 'react';
 
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+
 
 import { Link } from 'react-router-dom';
 import { updateProfile } from 'firebase/auth';
@@ -19,7 +19,6 @@ const Register = () => {
 
   const { createUser, signInWithGoogle } = useContext(AuthContext);
   const [registerError, setRegisterError] = useState('');
-  const [showPassword, setShaowPassword] = useState(false);
   const [success, setSuccess] = useState('');
   const emailRef = useRef(null);
 
@@ -34,30 +33,6 @@ const handleRegister = (e) => {
 
 setRegisterError('');
 setSuccess('');
-
-
-// const isStrongPassword = (password) => {
-//     return (
-//       password.length >= 6 &&
-//       /[a-z]/.test(password) &&
-//       /[0-9]/.test(password) &&
-    
-//     );
-    
-//   };
-
-//   if (!isStrongPassword(password)) {
-//     setRegisterError(
-//       'Password should be at best six characters with at least one lowercase & one numeric digit.'
-//     );
-//     return;
-//   }
- 
-//       else if(!accepted){
-//           setRegisterError('Please accept our terms and conditions!');
-//           return;
-//         }        
-
 
 
    if(password.length < 6 ) {
@@ -188,11 +163,11 @@ setSuccess('');
     
     
     
-    <span className="relative  -right-60" onClick={() => setShaowPassword(!showPassword)}>
+    {/* <span className="relative  -right-60" onClick={() => setShaowPassword(!showPassword)}>
               {
                 showPassword ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>
               }
-              </span> 
+              </span>  */}
     
     
     
