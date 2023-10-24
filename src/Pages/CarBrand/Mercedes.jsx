@@ -50,7 +50,7 @@ const Mercedes = () => {
 
 </div>
             
-           <Footer></Footer>
+       
         </div>
        </div>
     );

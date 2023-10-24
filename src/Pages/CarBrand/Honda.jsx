@@ -48,7 +48,7 @@ const Honda = () => {
 
 </div>
             
-           <Footer></Footer>
+       
         </div>
        </div>
     );

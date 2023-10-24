@@ -50,7 +50,7 @@ const Ford = () => {
 
 </div>
              
-            <Footer></Footer>
+           
          </div>
         </div>
          );

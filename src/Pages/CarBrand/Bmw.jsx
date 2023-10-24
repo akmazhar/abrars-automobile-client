@@ -46,7 +46,7 @@ const Bmw = () => {
      </div>
         
 
-       <Footer></Footer>
+      
     </div>
    </div>
     );

@@ -10,27 +10,7 @@ import Footer from "../Footer/Footer";
 
 const Toyota = () => {
 
-// //
 
-//   const [toyotaData, setToyotaData] = useState([]);
-
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       try {
-//         const response = await axios.get('http://localhost:5000/car');
-//         setToyotaData(response.data);
-//       } catch (error) {
-//         console.error('Error fetching data:', error);
-//       }
-//     };
-//     fetchData();
-//   }, []);
-
-//   const specificBrand = 'Toyota'; 
-//   const specificBrandData = toyotaData.find((item) => item.brandName === specificBrand);
-
-
-// //
 
 const cars = useLoaderData();
 
@@ -76,30 +56,7 @@ const cars = useLoaderData();
   
      </div>
 
-
-
-    {/* <div>
-      {specificBrandData ? (
-        <div>
-          <h2>{specificBrandData.brandName}</h2>
-          {specificBrandData.types.map((type) => (
-            <div key={type._id}>
-              <h3>{type.name}</h3>
-              <p>Rating: {type.rating}</p>
-              <p>Price: {type.price}</p>
-              <p>Type: {type.type}</p>
-              <p>{type.shortDescription}</p>
-              <img src={type.image} alt={type.name} style={{ width: '200px', height: '150px' }} />
-              <hr />
-            </div>
-          ))}
-        </div>
-      ) : (
-        <p>No data found for {specificBrand}.</p>
-      )}
-    </div> */}
-            
-           <Footer></Footer>
+           
         </div>
        </div>
     );

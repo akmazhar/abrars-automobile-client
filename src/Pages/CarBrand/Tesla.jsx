@@ -50,8 +50,7 @@ const Tesla = () => {
 
 </div>
     
-                
-               <Footer></Footer>
+          
             </div>
            </div>
     );
