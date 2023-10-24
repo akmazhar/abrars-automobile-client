@@ -61,16 +61,18 @@ const Login = () => {
 return (
     <div>
       <div>
-    <video autoPlay muted loop className="video ">
-        <source src="/Blue .mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div className="text-start lg:text-left">
+    <h1 className="text-5xl text-indigo-600 font-mono font-bold">Login!</h1>
+  </div>
       </div>
       <div className="hero min-h-screen">
         <div className="hero-content lg:flex-cols-reverse">
-  <div className="text-start lg:text-left">
-    <h1 className="text-5xl text-indigo-600 font-mono font-bold">Login!</h1>
-  </div>
+        <div>
+    <video autoPlay muted loop className="video ml-10 w-2/3">
+        <source src="/y.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      </div>
   <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
     
 
@@ -80,49 +82,49 @@ return (
 
       <div className="form-control">
         <label className="label">
-          <span className="label-text text-white ml-20 px-5 font-mono">Email</span>
+          <span className="label-text ml-20 font-semibold text-yellow-800 px-5 font-mono">Email</span>
         </label>
         <input
           type="email"
           placeholder="Enter Your Email"
           name="email"
-          className="input bg-yellow-800 input-bordered"
+          className="input input-bordered"
           required
                 />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text ml-10 text-white font-mono">Password</span>
-                </label>
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="Password"
-                  className="input input-bordered"
-                  required
-                />
-                <label className="label">
+  </div>
+  <div className="form-control">
+    <label className="label">
+      <span className="label-text ml-10 font-semibold text-yellow-800  font-mono">Password</span>
+    </label>
+    <input
+      type="password"
+      name="password"
+      placeholder="Password"
+      className="input input-bordered"
+      required
+    />
+    <label className="label">
 
 
-                  <a onClick={handleForgetPassword} href="#" className="label-text-alt text-red-600 link link-hover">
-                 
+      <a onClick={handleForgetPassword} href="#" className="label-text-alt text-red-600 link link-hover">
+      
 
 
-                    Forgot password?
-                  </a>
-                </label>
-              </div>
-              <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
-                <p className="font-serif text-start">
-                  Do not have an account? Please\
-                  
-                  <Link className="font-serif" to="/register">
-                    <button className="btn btn-link text-blue-700 font-bold">Register</button>
-                  </Link>
+        Forgot password?
+      </a>
+    </label>
+  </div>
+  <div className="form-control mt-6">
+    <button className="btn btn-primary">Login</button>
+    <p className="font-serif text-start ml-20">
+      Don't have an account?
+      
+      <Link className="font-serif" to="/register">
+        <button className="btn btn-link text-green-800 font-bold">Register</button>
+      </Link>
 
-                  first.
-                </p>
+      first.
+    </p>
 
 
 
@@ -135,7 +137,7 @@ return (
 
                 <p>
         <button onClick={handleGoogleSignIn}
-          className="btn bg-black  font-mono px-52 py-2 font-lg text-orange-300 text-left items-start"
+          className="btn bg-black rounded-s-3xl rounded-e-3xl px-28 ml-24 py-2  text-orange-300"
         >
           <FcGoogle className='w-8 h-6'></FcGoogle>
         </button>
