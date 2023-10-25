@@ -9,11 +9,8 @@ const ErrorPage = () => {
         <div className="py-10 shadow-lg my-56">
            
             <div>
-            <div className="items-center justify-center">
-      <video autoPlay muted loop className="video w-1/2 h-1/2 mb-10 ml-96 ">
-      <source src="/oops!.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+            <div className=" ml-96 mb-5 items-center justify-center">
+           <img src="https://i.ibb.co/VQ91jpG/404.png" alt="" />
       </div>
       
             </div>

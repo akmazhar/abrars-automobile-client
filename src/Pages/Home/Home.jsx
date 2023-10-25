@@ -9,9 +9,11 @@ const Home = () => {
   return (
     <div>
          <Banner></Banner>
-      
-        
-       
+
+
+
+
+
   <div>
   <div className="ml-20 mr-20 mt-1 mb-6 items-center  grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
  <div className="card lg:card-side bg-base-10 shadow-2xl">
@@ -26,7 +28,7 @@ const Home = () => {
    </div>
  <div className="items-center justify-center">
       <video autoPlay muted loop className="video w-1/2 h-1/2 mb-10 ml-96 ">
-      <source src="/h.mp4" type="video/mp4" />
+      <source src="/y.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
       </div>
@@ -72,7 +74,17 @@ const Home = () => {
       </div>
     </div> 
     
+
+
+
     <Mar></Mar>
+
+
+
+
+
+
+    
    
     <FrontBrand></FrontBrand>
    </div>

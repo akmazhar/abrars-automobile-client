@@ -21,7 +21,7 @@ const UpdateProduct = () => {
     console.log(updatedCar);
 
     //send data to the server
-    fetch(`http://localhost:5001/product/${_id}`, {
+    fetch(`abrars-automobile-server.vercel.app/product/${_id}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json'
@@ -44,12 +44,12 @@ const UpdateProduct = () => {
 
  
    return (
-       <div className="bg-[#F4F3F0] p-24">
+       <div className="bg-[#e2c9da] p-40">
              
        <div className="flex justify-center items-center text-center mb-5">
        {/* <h1 className='text-3xl text-center font-extrabold font-mono p-3 ml-40 text-green-600'>Update Your Car<span className='text-orange-950 font-semibold font-serif'> : Smartly</span></h1> */}
        {/* <img className="justify-center items-center" src="/c.png" alt="" width={80}/> */}
-       <img className="justify-center items-center" src="https://i.ibb.co/S6bw72J/1.jpg" alt="" width={80}/>
+       <img className="justify-center items-center" src="https://i.ibb.co/S6bw72J/1.jpg" alt="" width={1250}/>
        </div>
      
        <form onSubmit={handleUpdateProduct}> 

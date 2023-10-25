@@ -13,6 +13,8 @@ import { FcGoogle } from 'react-icons/fc';
 
 
 
+
+
 const Register = () => {
 
 
@@ -62,14 +64,17 @@ setSuccess('');
         console.log(result.user);
         setRegisterError('');
         setSuccess('User Created Successfully');
+        // Toast.success('User Created Successfully');
         updateProfile(result.user, {
     
             displayName: name,
             photoURL: "https://i.ibb.co/QnqFLDG/j.png"
             })
             .then(()=> {
+              // Toast.success('User Created Successfully');
                 window.location.reload();
-                // toast.success('User Created Successfully');
+                setSuccess('User Created Successfully');
+                
             })
             .catch(error => {
                 console.log(error)
@@ -229,7 +234,7 @@ setSuccess('');
 
             </div>
           </div>
-           {/* <ToastContainer/>  */}
+           {/* <ToastContainer></ToastContainer>  */}
         </div>
         </div>
        </div>

@@ -42,12 +42,12 @@ const router = createBrowserRouter([
 {
    path:"/updateProduct/:id",
    element: <PrivetRoute><UpdateProduct></UpdateProduct></PrivetRoute>,
-   loader: ({params}) => fetch(`http://localhost:5001/product/${params.id}`) 
+   loader: ({params}) => fetch(`abrars-automobile-server.vercel.app/product/${params.id}`) 
 },
 {
     path: "/myCart",
     element: <PrivetRoute><MyCart></MyCart></PrivetRoute>,
-    loader: () => fetch('http://localhost:5001/brandCarts')
+    loader: () => fetch('abrars-automobile-server.vercel.app/brandCarts')
 },
 
 {
@@ -67,43 +67,43 @@ const router = createBrowserRouter([
 {
   path: "/bmw",
   element: <Bmw></Bmw>,
-  loader: () => fetch('http://localhost:5001/car/BMW')
+  loader: () => fetch('abrars-automobile-server.vercel.app/car/BMW')
 },
 {
   path: "/mercedes",
   element: <Mercedes></Mercedes>,
-  loader: () => fetch('http://localhost:5001/car/MERCEDES-BENZ')
+  loader: () => fetch('abrars-automobile-server.vercel.app/car/MERCEDES-BENZ')
 },
 {
   path: "/tesla",
   element: <Tesla></Tesla>,
-  loader: () => fetch('http://localhost:5001/car/TESLA')
+  loader: () => fetch('abrars-automobile-server.vercel.app/car/TESLA')
 },
 {
   path: "/toyota",
   element: <Toyota></Toyota>,
-  loader: () => fetch('http://localhost:5001/car/TOYOTA')
+  loader: () => fetch('abrars-automobile-server.vercel.app/car/TOYOTA')
 },
 {
   path: "/honda",
   element: <Honda></Honda>,
-  loader: () => fetch('http://localhost:5001/car/HONDA')
+  loader: () => fetch('abrars-automobile-server.vercel.app/car/HONDA')
 },
 {
   path: "/ford",
   element: <Ford></Ford>,
-  loader: () => fetch('http://localhost:5001/car/FORD')
+  loader: () => fetch('abrars-automobile-server.vercel.app/car/FORD')
 },
 {
   path : "/productDetails/:id",
  element : <PrivetRoute><ProductDetails></ProductDetails></PrivetRoute>,
- loader: ({params}) => fetch(`http://localhost:5001/product/${params.id}`)
+ loader: ({params}) => fetch(`abrars-automobile-server.vercel.app/product/${params.id}`)
 }
 
 // {
 //     path : "/carDetails/:id",
 //     element : <CarDetails></CarDetails>,
-//     loader: () => fetch('http://localhost:5001//car')
+//     loader: () => fetch('abrars-automobile-server.vercel.app//car')
 // }
   ]
 }

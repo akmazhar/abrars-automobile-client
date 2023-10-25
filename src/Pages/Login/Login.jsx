@@ -38,6 +38,15 @@ const Login = () => {
       return;
     }
     // Handle forgot password logic (send reset email)
+    //      if(data.insertedId){
+//       Swal.fire({
+//         title: 'Success!',
+//         text: 'Your Car is nicely selected',
+//         icon: 'success',
+//         confirmButtonText: 'Thank You!'
+//       });
+// }
+
     sendPasswordResetEmail(auth, email)
       .then(() => {
         alert('Please Check Your Email');
