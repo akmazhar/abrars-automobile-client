@@ -16,7 +16,7 @@ const Cart = ({setCartItems, cartItems, item}) => {
           }).then((result) => {
             if (result.isConfirmed) {
            
-            fetch(`abrars-automobile-server.vercel.app/brandCarts/${id}`, {
+            fetch(`https://abrars-automobile-server.vercel.app/brandCarts/${id}`, {
                 method: 'DELETE',
             }) 
             .then(res => res.json())   

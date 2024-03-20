@@ -17,7 +17,7 @@ const AddProduct = () => {
         console.log(newCar);
 
         //send data to the server
-        fetch('abrars-automobile-server.vercel.app/car', {
+        fetch('https://abrars-automobile-server.vercel.app/car', {
          method: 'POST',
          headers:  {
             'content-type':'application/json'

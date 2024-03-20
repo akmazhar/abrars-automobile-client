@@ -42,12 +42,12 @@ const router = createBrowserRouter([
 {
    path:"/updateProduct/:id",
    element: <PrivetRoute><UpdateProduct></UpdateProduct></PrivetRoute>,
-   loader: ({params}) => fetch(`abrars-automobile-server.vercel.app/product/${params.id}`) 
+   loader: ({params}) => fetch(`https://abrars-automobile-server.vercel.app/product/${params.id}`) 
 },
 {
     path: "/myCart",
     element: <PrivetRoute><MyCart></MyCart></PrivetRoute>,
-    loader: () => fetch('abrars-automobile-server.vercel.app/brandCarts')
+    loader: () => fetch('https://abrars-automobile-server.vercel.app/brandCarts')
 },
 
 {
@@ -67,43 +67,43 @@ const router = createBrowserRouter([
 {
   path: "/bmw",
   element: <Bmw></Bmw>,
-  loader: () => fetch('abrars-automobile-server.vercel.app/car/BMW')
+  loader: () => fetch('https://abrars-automobile-server.vercel.app/car')
 },
 {
   path: "/mercedes",
   element: <Mercedes></Mercedes>,
-  loader: () => fetch('abrars-automobile-server.vercel.app/car/MERCEDES-BENZ')
+  loader: () => fetch('https://abrars-automobile-server.vercel.app/car')
 },
 {
   path: "/tesla",
   element: <Tesla></Tesla>,
-  loader: () => fetch('abrars-automobile-server.vercel.app/car/TESLA')
+  loader: () => fetch('https://abrars-automobile-server.vercel.app/car')
 },
 {
   path: "/toyota",
   element: <Toyota></Toyota>,
-  loader: () => fetch('abrars-automobile-server.vercel.app/car/TOYOTA')
+  loader: () => fetch('https://abrars-automobile-server.vercel.app/car')
 },
 {
   path: "/honda",
   element: <Honda></Honda>,
-  loader: () => fetch('abrars-automobile-server.vercel.app/car/HONDA')
+  loader: () => fetch('https://abrars-automobile-server.vercel.app/car')
 },
 {
   path: "/ford",
   element: <Ford></Ford>,
-  loader: () => fetch('abrars-automobile-server.vercel.app/car/FORD')
+  loader: () => fetch('https://abrars-automobile-server.vercel.app/car')
 },
 {
   path : "/productDetails/:id",
  element : <PrivetRoute><ProductDetails></ProductDetails></PrivetRoute>,
- loader: ({params}) => fetch(`abrars-automobile-server.vercel.app/product/${params.id}`)
+ loader: ({params}) => fetch(`https://abrars-automobile-server.vercel.app/product/${params.id}`)
 }
 
 // {
 //     path : "/carDetails/:id",
 //     element : <CarDetails></CarDetails>,
-//     loader: () => fetch('abrars-automobile-server.vercel.app//car')
+//     loader: () => fetch('https://abrars-automobile-server.vercel.app//car')
 // }
   ]
 }
@@ -113,11 +113,16 @@ const router = createBrowserRouter([
 export default router;
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <AuthProvider>
- <RouterProvider router={router}/>
-    </AuthProvider>
-  </React.StrictMode>,
+
+  <div className='man-w-screen max-auto'>
+      <React.StrictMode>
+      <AuthProvider>
+     <RouterProvider router={router}/>
+     </AuthProvider>
+     </React.StrictMode>,
+  </div>
+
+
 )
 
 

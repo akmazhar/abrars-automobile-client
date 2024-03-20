@@ -18,7 +18,6 @@ import { PropTypes } from 'prop-types';
 
 
 export const AuthContext = createContext(null);
-
 const googleProvider = new GoogleAuthProvider();
 
 const AuthProvider = ({ children }) => {

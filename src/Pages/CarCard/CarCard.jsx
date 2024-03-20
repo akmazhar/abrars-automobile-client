@@ -22,7 +22,7 @@ const CarCard = ({car, cars, setCars }) => {
         if (result.isConfirmed) {
        
           
-          fetch(`abrars-automobile-server.vercel.app/car/${_id}` , {
+          fetch(`https://abrars-automobile-server.vercel.app/car/${_id}` , {
             method: 'DELETE'
           }) 
           .then(res => res.json())

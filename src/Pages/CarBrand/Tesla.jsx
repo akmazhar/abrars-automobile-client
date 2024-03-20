@@ -1,12 +1,17 @@
 
 import { useLoaderData } from 'react-router-dom';
-import Footer from '../Footer/Footer';
 import CarCard from '../CarCard/CarCard';
+import { useEffect, useState } from 'react';
 
 const Tesla = () => {
 
   
-  const cars = useLoaderData();
+  const targetData = useLoaderData();
+  const [cars, setTargetDetails] = useState([])
+  useEffect(() => {
+      const targetS = targetData.filter(target => target?.brandName == 'TESLA');
+      setTargetDetails(targetS)
+  }, [targetData])
 
     return (
             <div>

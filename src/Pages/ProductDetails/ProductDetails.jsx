@@ -13,7 +13,7 @@ const ProductDetails = () => {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    fetch(`abrars-automobile-server.vercel.app/product/${id}`)
+    fetch(`https://abrars-automobile-server.vercel.app/product/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setData(data);
@@ -32,7 +32,7 @@ const ProductDetails = () => {
    
    const addToCartHandle = () =>{
     console.log(oneCart)
-    fetch('abrars-automobile-server.vercel.app/brandCarts', {
+    fetch('https://abrars-automobile-server.vercel.app/brandCarts', {
         method: "POST",
         headers: {
             'content-type' : 'application/json'
